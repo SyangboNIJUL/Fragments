@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".SecondActivity">
+
 
 
     <FrameLayout
@@ -38,7 +39,7 @@
         android:layout_marginLeft="@dimen/margin_wide"
         android:layout_marginEnd="@dimen/margin_wide"
         android:layout_marginRight="@dimen/margin_wide"
-        android:text="@string/title1"
+        android:text="@string/title2"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toRightOf="@+id/imageView"
@@ -63,7 +64,7 @@
             android:id="@+id/article"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/article1"
+            android:text="@string/article2"
             tools:layout_editor_absoluteX="8dp"
             tools:layout_editor_absoluteY="288dp" />
     </ScrollView>
@@ -81,19 +82,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/fragment_container"
         app:layout_constraintVertical_bias="0.32" />
+
     <Button
-        android:id="@+id/next_button"
+        android:id="@+id/prev_button"
         android:layout_width="87dp"
         android:layout_height="61dp"
         android:backgroundTint="@color/gray"
-        android:onClick="launchSecondActivity"
-        android:text="@string/next"
+        android:text="@string/prev"
+        android:onClick="launchMainActivity"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.049"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/fragment_container"
-        app:layout_constraintVertical_bias="0.426" />
+        app:layout_constraintVertical_bias="0.432" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
