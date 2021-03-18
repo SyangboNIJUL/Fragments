@@ -22,7 +22,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RadioGroup;
+import android.widget.RatingBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 /**
  * A simple {@link Fragment} subclass to display
@@ -54,6 +56,9 @@ public class SimpleFragment extends Fragment {
         final View rootView = inflater.inflate(R.layout.fragment_simple,
                 container, false);
         final RadioGroup radioGroup = rootView.findViewById(R.id.radio_group);
+        rootView.findViewById(R.id.ratingBar);
+        final RatingBar ratingBar =
+                rootView.findViewById(R.id.ratingBar);
 
         // Set the radioGroup onCheckedChanged listener.
         radioGroup.setOnCheckedChangeListener(
@@ -75,6 +80,20 @@ public class SimpleFragment extends Fragment {
                                 // Do nothing.
                                 break;
                         }
+                    }
+                });
+
+        // Set the rating bar onCheckedChanged listener.
+        ratingBar.setOnRatingBarChangeListener
+                (new RatingBar.OnRatingBarChangeListener() {
+                    @Override
+                    public void onRatingChanged(RatingBar ratingBar,
+                                                float rating, boolean fromUser) {
+                        // Get rating and show Toast with rating.
+                        String myRating = (getString(R.string.my_rating) +
+                                String.valueOf(ratingBar.getRating()));
+                        Toast.makeText(getContext(), myRating,
+                                Toast.LENGTH_LONG).show();
                     }
                 });
 
