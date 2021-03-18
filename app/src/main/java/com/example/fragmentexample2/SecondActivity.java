@@ -27,7 +27,7 @@ public class SecondActivity extends AppCompatActivity {
                     savedInstanceState.getBoolean(STATE_FRAGMENT);
             if (isFragmentDisplayed) {
 
-                mButton.setText(R.string.prev);
+                mButton.setText(R.string.close);
             }
         }
     }
@@ -48,7 +48,7 @@ public class SecondActivity extends AppCompatActivity {
                 .beginTransaction();
         fragmentTransaction.add(R.id.fragment_container,
                 simpleFragment).addToBackStack(null).commit();
-        mButton.setText(R.string.prev);
+        mButton.setText(R.string.close);
         isFragmentDisplayed = true;
 
     }
