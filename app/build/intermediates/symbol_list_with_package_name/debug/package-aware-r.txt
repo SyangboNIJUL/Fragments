@@ -689,7 +689,7 @@ id end_padder
 id expand_activities_button
 id expanded_menu
 id forever
-id fragment
+id fragment_container
 id fragment_header
 id fragment_header2
 id gone
@@ -719,6 +719,7 @@ id normal
 id notification_background
 id notification_main_column
 id notification_main_column_container
+id open_button
 id packed
 id parent
 id parentPanel
@@ -882,6 +883,7 @@ string question_article
 string question_the_song
 string search_menu_title
 string status_bar_notification_info_overflow
+string string_open
 string title1
 string title2
 string yes

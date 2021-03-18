@@ -1,5 +1,6 @@
 com/example/android/fragmentexample/MainActivity.java
  com.example.android.fragmentexample.MainActivity
+ com.example.android.fragmentexample.MainActivity$1
 com/example/android/fragmentexample/BuildConfig.java
  com.example.android.fragmentexample.BuildConfig
 com/example/android/fragmentexample/SimpleFragment.java

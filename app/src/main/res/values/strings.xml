@@ -42,4 +42,5 @@
     <string name="exception_message">must implement OnFragmentInteractionListener</string>
     <string name="question_the_song">LIKE THE SONG!</string>
     <string name="my_rating">My Ratings</string>
+    <string name="string_open">Button</string>
 </resources>
